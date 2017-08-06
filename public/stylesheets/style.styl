@@ -1,0 +1,129 @@
+ // LAYOUT -----------------------------------------------
+
+ body
+  font 12px Verdana
+  color white
+  background #000
+  margin 0
+
+header
+  width 100%
+  font-size 20px
+  padding 20px
+
+header
+  a:link
+    color grey
+  a:visited
+    color grey
+  a:active
+    color green
+
+#divContent
+  width 97%
+  margin 0 auto
+  text-align left
+  color black
+  background #fff
+  padding 10px
+  border-bottom-radius(15px)
+
+.breadcrumb
+  list-style none
+  overflow hidden
+  font 18px Helvetica, Arial, Sans-Serif
+  margin 0
+  padding 0
+
+.breadcrumb li
+  float left
+
+.breadcrumb li a
+  color white
+  text-decoration none
+  padding 10px 0 10px 55px
+  background black                            /* fallback color */
+  background black
+  position relative
+  display block
+  float left
+
+.breadcrumb li a::after
+  content " "
+  display block
+  width 0
+  height 0
+  border-top 50px solid transparent           /* Go big on the size, and let overflow hide */
+  border-bottom 50px solid transparent
+  border-left 30px solid black
+  position absolute
+  top 50%
+  margin-top -50px
+  left 100%
+  z-index 2
+
+.breadcrumb li a::before
+  content " "
+  display block
+  width 0
+  height 0
+  border-top 50px solid transparent           /* Go big on the size, and let overflow hide */
+  border-bottom 50px solid transparent
+  border-left 30px solid white
+  position absolute
+  top 50%
+  margin-top -50px
+  margin-left 1px
+  left 100%
+  z-index 1
+
+.breadcrumb li:first-child a
+  padding-left 10px
+
+.breadcrumb li:nth-child(2) a
+  background hsla(193, 65%, 15%, 1)
+.breadcrumb li:nth-child(2) a:after
+  border-left-color hsla(193, 65%, 15%, 1)
+.breadcrumb li:nth-child(3) a
+  background hsla(193, 65%, 25%, 1)
+.breadcrumb li:nth-child(3) a:after
+  border-left-color hsla(193, 65%, 25%, 1)
+.breadcrumb li:nth-child(4) a
+  background hsla(193, 65%, 35%, 1)
+.breadcrumb li:nth-child(4) a:after
+  border-left-color hsla(193, 65%, 35%, 1)
+.breadcrumb li:nth-child(5) a
+  background hsla(193, 65%, 45%, 1)
+.breadcrumb li:nth-child(5) a:after
+  border-left-color hsla(193, 65%, 45%, 1)
+.breadcrumb li:nth-child(6) a
+  background hsla(193, 65%, 55%, 1)
+.breadcrumb li:nth-child(6) a:after
+  border-left-color hsla(193, 65%, 55%, 1)
+
+.breadcrumb li a:hover
+  background black
+.breadcrumb li a:hover:after
+  border-left-color black !important
+
+footer
+  width 97%
+  text-align center
+  padding 10px
+  font 11px Verdana
+
+footer a
+  text-decoration none
+
+footer
+  a:visited
+    color white
+
+// EVENTS -----------------------------------------------
+
+#tblEventsTotals
+  width 100%
+
+#tblEventsTotals td
+  text-align center
+  width 16%

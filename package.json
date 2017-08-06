@@ -1,0 +1,25 @@
+{
+  "name": "emon",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "jstransformer": "^1.0.0",
+    "morgan": "~1.8.1",
+    "mysql": "^2.14.1",
+    "serve-favicon": "~2.4.2",
+    "stylus": "0.54.5"
+  },
+  "devDependencies": {
+    "serverless": "^1.19.0",
+    "serverless-plugin-write-env-vars": "^1.0.1"
+  }
+}

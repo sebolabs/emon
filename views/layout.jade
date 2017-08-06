@@ -1,0 +1,40 @@
+doctype
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/tablesorter-css/theme.ice.css')
+    script(type='text/javascript', src='http://code.jquery.com/jquery-latest.js')
+    script(type='text/javascript', src='/javascripts/tablesorter-js/jquery.tablesorter.js')
+    script.
+      $(function(){
+        $("#tblEvents").tablesorter({
+          theme: 'ice'
+        });
+      });
+  body
+    header
+      table(width="97%")
+        tr
+          td(width="70px")
+            img(src="/images/logo.png", width="70px", height="40px")
+          td(width)
+            ul.breadcrumb
+              li
+                a(href="#") eMon
+              li
+                a(href="/") Events
+              li
+                a(href="/review") Review
+              li
+                a(href="/archive") Archive
+              li
+                a(href="/stats") Statistics
+              li
+                a(href="/logout") Logout
+          td(align="right") [admin]
+    div#divContent
+      block content
+    footer
+      a(href='https://github.com/sebolabs') ^ BY SEBOLABS ^
+        

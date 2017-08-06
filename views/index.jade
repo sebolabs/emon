@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  hr
+  h2= "Open events"
+  table#tblEvents.tablesorter
+    thead
+      tr
+        th ID
+        th CREATION DATE
+        th SOURCE
+        th STATUS
+        th NAME
+        th DESCRIPTION
+        th OWNER
+        th ACTIONS
+    tbody
+      each event in events
+        tr
+          td=event.id
+          td="2017-08-01 14:23:12"
+          td AWS
+          if event.status.toLowerCase() == 'error'
+            td(bgcolor="#ff9999")=event.status.toUpperCase()
+          else if event.status.toLowerCase() == 'warning'
+            td(bgcolor="#fff099")=event.status.toUpperCase()
+          else if event.status.toLowerCase() == 'ok'
+            td(bgcolor="#adebad")=event.status.toUpperCase()
+          else
+            td=event.status.toUpperCase()
+          td=event.name
+          td=event.description
+          td admin
+          td="ASSIGN | ADD NOTE | FORWARD | CLOSE"
+  br
+  table#tblEventsTotals
+    tr
+      td(bgcolor="#cccccc") TOTAL [23]
+      td(bgcolor="#ff9999") ERROR [11]
+      td(bgcolor="#fff099") WARNING [4]
+      td(bgcolor="#adebad") OK [7]
+      td(bgcolor="#99ccff") INFO [1]
+      td(bgcolor="#dfb3ff") ACK [0]

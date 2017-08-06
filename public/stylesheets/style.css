@@ -1,0 +1,135 @@
+body {
+  font: 12px Verdana;
+  color: #fff;
+  background: #000;
+  margin: 0;
+}
+header {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+header a:link {
+  color: #808080;
+}
+header a:visited {
+  color: #808080;
+}
+header a:active {
+  color: #008000;
+}
+#divContent {
+  width: 97%;
+  margin: 0 auto;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+}
+.breadcrumb {
+  list-style: none;
+  overflow: hidden;
+  font: 18px Helvetica, Arial, Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0 10px 55px;
+  background: #000 /* fallback color */;
+  background: #000;
+  position: relative;
+  display: block;
+  float: left;
+}
+.breadcrumb li a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent /* Go big on the size, and let overflow hide */;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+.breadcrumb li a::before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent /* Go big on the size, and let overflow hide */;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+.breadcrumb li:first-child a {
+  padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a {
+  background: #0d343f;
+}
+.breadcrumb li:nth-child(2) a:after {
+  border-left-color: #0d343f;
+}
+.breadcrumb li:nth-child(3) a {
+  background: #165769;
+}
+.breadcrumb li:nth-child(3) a:after {
+  border-left-color: #165769;
+}
+.breadcrumb li:nth-child(4) a {
+  background: #1f7a93;
+}
+.breadcrumb li:nth-child(4) a:after {
+  border-left-color: #1f7a93;
+}
+.breadcrumb li:nth-child(5) a {
+  background: #289dbd;
+}
+.breadcrumb li:nth-child(5) a:after {
+  border-left-color: #289dbd;
+}
+.breadcrumb li:nth-child(6) a {
+  background: #42b7d7;
+}
+.breadcrumb li:nth-child(6) a:after {
+  border-left-color: #42b7d7;
+}
+.breadcrumb li a:hover {
+  background: #000;
+}
+.breadcrumb li a:hover:after {
+  border-left-color: #000 !important;
+}
+footer {
+  width: 97%;
+  text-align: center;
+  padding: 10px;
+  font: 11px Verdana;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  color: #fff;
+}
+#tblEventsTotals {
+  width: 100%;
+}
+#tblEventsTotals td {
+  text-align: center;
+  width: 16%;
+}
